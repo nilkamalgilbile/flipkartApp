@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: black;
+  --gray-color: gray;
+  --brand-color: #172337;
+}
+
+.dark-theme {
+  --primary-color: black;
+  --secondary-color: #ffffff;
+  --gray-color: #cccccc;
+  --brand-color: #cccccc;
+}
+
+#main {
+  z-index: 1;
+}
+
+/* dark - light mode */
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+.darkMode {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/*--- Header ---*/
+header {
+  background-color: #2874f0;
+  height: 50px;
+}
+
+.webname {
+  font-size: 27px;
+  color: var(--primary-color);
+  font-style: italic;
+  align-self: center;
+}
+#searchBox {
+  width: 400px;
+  padding: 0.4% 1%;
+  outline: none;
+  border: none;
+  font-size: 16px;
+}
+#searchBtn {
+  background-color: var(--primary-color);
+  color: #2874f0;
+  text-align: center;
+  font-size: 16px;
+  align-self: center;
+  margin-left: -6.7%;
+}
+#loginButton {
+  font-size: 16px;
+  background-color: var(--primary-color);
+  color: #2874f0;
+  border: none;
+  border-radius: 0;
+  text-align: center;
+  width: 110px;
+  font-weight: bold;
+}
+
+#cartIcon {
+  font-size: 16;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+#modeIcon {
+  width: 30px;
+  cursor: pointer;
+}
+
+.location {
+  font-size: 16px;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* media query */
+
+@media screen and (max-width: 1024px) {
+  #searchBox {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #searchBox {
+    display: none;
+  }
+  #searchBtn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .webname {
+    font-size: 25px;
+  }
+
+  #loginButton {
+    margin-left: 4%;
+    width: 90px;
+  }
+  #cartIcon {
+    margin-left: 4%;
+  }
+}

@@ -1,0 +1,34 @@
+/*--- Footer ---*/
+footer {
+  background-color: #172337;
+  height: auto;
+}
+.footerBlock {
+  color: white;
+  padding: 2% 0 1.5% 0;
+  text-align: center;
+}
+.footerTitle {
+  color: var(--gray-color);
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 3;
+}
+.footerAbout ul,
+.footerHelp ul {
+  list-style: none;
+  padding: 0;
+  line-height: 2;
+  font-size: 16px;
+}
+.socialIcon {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 1%;
+}
+
+#hrLine {
+  height: 3px;
+  color: var(--primary-color);
+}

@@ -1,0 +1,19 @@
+.submenu {
+  background-color: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
+  border-bottom: 1px solid gray;
+  position: sticky;
+  top: 0;
+}
+
+.toggleBtn {
+  color: var(--secondary-color) !important;
+}
+
+.dropdown-menu {
+  width: fit-content;
+}
+
+.dropdown-item {
+  font-size: 14px;
+}

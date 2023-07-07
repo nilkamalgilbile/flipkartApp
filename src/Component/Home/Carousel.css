@@ -1,0 +1,87 @@
+.carouselBlock {
+  background-color: var(--primary-color);
+  padding: 0.5%;
+}
+#slide-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.carousel-inner {
+  overflow: hidden;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 300px;
+  display: block;
+}
+
+.carousel-control-prev {
+  background-color: var(--primary-color);
+  opacity: 1;
+  height: 100px;
+  width: 50px;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+  position: absolute;
+  top: 35%;
+}
+.carousel-control-next {
+  background-color: var(--primary-color);
+  opacity: 1;
+  height: 100px;
+  width: 50px;
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;
+  position: absolute;
+  top: 35%;
+}
+
+.prevIcon,
+.nextIcon {
+  color: var(--secondary-color);
+  font-size: 30px;
+}
+.carousel-control-next-icon {
+  background-color: var(--primary-color);
+}
+
+@media screen and (max-width: 1024px) {
+  .carousel-inner img {
+    height: 270px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-inner img {
+    height: 165px;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 35px;
+    height: 75px;
+  }
+  .prevIcon,
+  .nextIcon {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .carousel-inner img {
+    height: 100px;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+}
+@media screen and (max-width: 321px) {
+  .carousel-inner img {
+    height: 100px;
+  }
+}

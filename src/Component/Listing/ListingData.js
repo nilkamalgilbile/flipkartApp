@@ -10,22 +10,24 @@ const ListingData = (props) => {
           return (
             <>
               <div className="productBlock" key={item._id}>
-                <div className="imgBlock">
-                  <img src={item.product_img} alt="product" />
-                </div>
-                <div className="descBlock">
-                  <div className="brandName">
-                    {item.product_details[0].brand}
+                <Link to={`/details/${item.item_id}`} id="detailLink">
+                  <div className="imgBlock">
+                    <img src={item.product_img} alt="product" />
                   </div>
-                  <div className="productName">{item.product_name}</div>
-                  <div className="productDescBlock">
-                    <span className="productCost">&#x20B9;{item.cost}</span>
-                    <span className="productActualCost">
-                      <del>&#x20B9;{item.actual_price}</del>
-                    </span>
-                    <span className="productOffer">{item.offer}</span>
+                  <div className="descBlock">
+                    <div className="brandName">
+                      {item.product_details[0].brand}
+                    </div>
+                    <div className="productName">{item.product_name}</div>
+                    <div className="productDescBlock">
+                      <span className="productCost">&#x20B9;{item.cost}</span>
+                      <span className="productActualCost">
+                        <del>&#x20B9;{item.actual_price}</del>
+                      </span>
+                      <span className="productOffer">{item.offer}</span>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </div>
             </>
           );

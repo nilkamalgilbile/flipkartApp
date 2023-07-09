@@ -34,6 +34,9 @@
   box-sizing: border-box;
   box-shadow: 6px 7px 10px gray;
 }
+.productBlock a {
+  text-decoration: none;
+}
 .imgBlock {
   text-align: center;
   width: 100%;

@@ -18,7 +18,7 @@ const Filters = (props) => {
                 type="radio"
                 name={filterName}
                 value={value}
-                autocomplete="off"
+                autoComplete="off"
               />
               {value}
             </label>
@@ -69,7 +69,7 @@ const Filters = (props) => {
                           type="radio"
                           name={filters.filter_name}
                           value=""
-                          autocomplete="off"
+                          autoComplete="off"
                         />
                         ALL
                       </label>

@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: black;
+  --gray-color: gray;
+  --brand-color: #172337;
+}
+
+.dark-theme {
+  --primary-color: black;
+  --secondary-color: #ffffff;
+  --gray-color: #cccccc;
+  --brand-color: #cccccc;
+}
+
+/* detail page */
+
+.detailBox {
+  background-color: rgb(232, 232, 232);
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.imgListBox {
+  background-color: pink;
+  width: 100%;
+  height: auto;
+}
+
+.imgBox {
+  width: 100%;
+  height: 90px;
+  margin: 5% 0%;
+  cursor: pointer;
+}
+.imgBox img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+}
+.imgBox img:hover {
+  border: 2px solid blue;
+}
+.imgBox img:active {
+  border: 2px solid yellow;
+}
+
+.imgShowBox {
+  width: 100%;
+  height: auto;
+  background-color: magenta;
+}
+.imgShowBox img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  transition: transform 0.2s;
+}
+.imgShowBox img:hover {
+  transform: scale(1.03);
+}
+
+.prodDetailBox {
+  background-color: rgb(249, 189, 199);
+
+  width: 100%;
+  box-shadow: 6px 7px 10px rgb(95, 94, 94);
+  padding: 3%;
+  border: 1px solid white;
+}
+.prodBrand {
+  /* color: rgb(80, 79, 79); */
+  color: #212529;
+  font-weight: bold;
+  line-height: 2;
+  font-size: 17px;
+}
+.prodName {
+  color: blue;
+  font-size: 20px;
+  line-height: 2;
+}
+.prodCost {
+  color: black;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 2;
+}
+.prodActualCost {
+  color: rgb(54, 54, 54);
+  line-height: 2;
+  margin-left: 2%;
+}
+.prodOffer {
+  color: green;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 2;
+  margin-left: 2%;
+}
+.prodRating {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 1%;
+  border-radius: 10%;
+  line-height: 2;
+}
+.prodRatingText {
+  color: #172337;
+  font-size: 16px;
+  line-height: 3;
+  margin-left: 1%;
+}
+.prodSizeText {
+  color: #172337;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 4;
+}
+.prodSize {
+  background-color: white;
+  color: black;
+  padding: 1% 2%;
+  margin-left: 1%;
+  line-height: 4;
+}
+.prodDetails {
+  color: black;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 3;
+}
+
+.table th {
+  text-transform: capitalize;
+  padding: 1%;
+  width: 100px;
+}
+
+.btnDetail {
+  font-size: 18px;
+}
+
+/* media query */
+@media screen and (max-width: 426px) {
+  .prodDetailBox {
+    padding-top: 2%;
+  }
+}

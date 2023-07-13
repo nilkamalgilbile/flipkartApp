@@ -1,44 +1,34 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useSearchParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
-const url = "https://flipkartapi-9q66.onrender.com/orders";
-const base_url = "https://flipkartapi-9q66.onrender.com";
+const url = "https://flipkartapi-9q66.onrender.com/placeOrder";
+// const url = "https://flipkartapi-9q66.onrender.com/orders";
+// const base_url = "https://flipkartapi-9q66.onrender.com";
 
 const PlaceOrder = () => {
   let params = useParams();
   let navigate = useNavigate();
-  let [prodDetails, setProdDetails] = useState();
-  let [prodName, setProdName] = useState();
-  let [prodCost, setProdCost] = useState();
+
+  const [searchParams, setSearchParams] = useSearchParams();
+  let prodName = searchParams.get("prodName");
+  let prodCost = searchParams.get("prodCost");
 
   let sessionData = sessionStorage.getItem("userInfo");
   let data = JSON.parse(sessionData);
-  console.log(data);
   let itemId = params.itemId;
-
-  useEffect(() => {
-    prodDetail();
-  }, [prodDetails, prodName, prodCost]);
-
-  const prodDetail = async () => {
-    const pdata = await axios.get(`${base_url}/details/${itemId}`);
-    setProdDetails(pdata.data[0]);
-    setProdName(pdata.data[0].product_name);
-    setProdCost(pdata.data[0].cost);
-  };
 
   const initialValues = {
     id: Math.floor(Math.random() * 100000),
     prod_name: prodName,
-    // name: data.name,
-    name: "Shreya",
-    // email: data.email,
-    email: "shreya@gmail.com",
+    name: data.name,
+    // name: "Shreya",
+    email: data.email,
+    // email: "shreya@gmail.com",
     cost: prodCost,
-    // phone: data.phone,
-    phone: 8745986254,
+    phone: data.phone,
+    // phone: 8745986254,
     address: "Hno 12 Sec 34",
   };
 
@@ -70,7 +60,7 @@ const PlaceOrder = () => {
         <div className="card border-primary mt-5 mb-5">
           <div className="card-header bg-primary text-white">
             <h3 style={{ textOverflow: "ellipsis", overflow: "hidden" }}>
-              Order For {prodName}
+              Order For {values.prod_name}
             </h3>
           </div>
           <div className="card-body">
@@ -129,7 +119,7 @@ const PlaceOrder = () => {
             </div>
             <div className="row">
               <div className="col-md-12 mt-3">
-                <h2>Total Price is Rs. {prodCost}</h2>
+                <h2>Total Price is Rs. {values.cost}</h2>
               </div>
             </div>
             <button className="btn btn-success mt-2" onClick={checkout}>

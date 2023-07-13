@@ -1,4 +1,5 @@
 import React from "react";
+import "./DisplayOrder.css";
 
 const DisplayOrder = (props) => {
   const renderData = ({ orderData }) => {
@@ -21,9 +22,9 @@ const DisplayOrder = (props) => {
   return (
     <>
       <div className="container">
-        <h3 className="text-center mt-3">Orders</h3>
-        <table className="table table-striped">
-          <thead>
+        <h3 className="text-center mt-4">Orders</h3>
+        <table className="table table-hover table-responsive">
+          <thead className="table-warning">
             <tr>
               <th>OrderId</th>
               <th>Pname</th>

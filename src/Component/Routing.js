@@ -10,8 +10,9 @@ import PlaceOrder from "./Orders/PlaceOrder";
 import ViewOrder from "./Orders/ViewOrder";
 import LoginComponent from "./Login/LoginComponent";
 import RegisterComponent from "./Login/RegisterComponent";
+import Coupon from "./Home/Coupon";
 
-const Routing = () => {
+function Routing() {
   return (
     <div>
       <BrowserRouter>
@@ -28,8 +29,9 @@ const Routing = () => {
         </Routes>
         <Footer />
       </BrowserRouter>
+      <Coupon />
     </div>
   );
-};
+}
 
 export default Routing;

@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: black;
+  --gray-color: gray;
+  --brand-color: #172337;
+}
+
+.dark-theme {
+  --primary-color: black;
+  --secondary-color: #ffffff;
+  --gray-color: #cccccc;
+  --brand-color: #cccccc;
+}
+
+#main {
+  z-index: 1;
+}
+
+/* Coupon css */
+#coupon {
+  height: auto;
+  width: 800px;
+  background-image: linear-gradient(to right, red, orange, yellow);
+  z-index: 100;
+  position: absolute;
+  margin-top: -90%;
+  margin-left: 25%;
+  visibility: hidden;
+  padding: 1%;
+  opacity: 1;
+  z-index: 2;
+}
+.closebtn {
+  float: right;
+}
+#couponimg {
+  width: 100%;
+}
+#desc1 {
+  color: #7de726;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 24px;
+  line-height: 2;
+}
+#desc2 {
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: 1px 1px black;
+  line-height: 2;
+  padding: 1px;
+  background-color: rgb(253, 195, 195);
+}
+#desc3 {
+  color: #29ccf9;
+  font-size: 20px;
+  line-height: 2;
+}
+#couponbtn {
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+}
+#couponbtn:hover {
+  background: none;
+  border: 2px solid yellow;
+  color: white;
+}
+
+/* media query */
+@media screen and (max-width: 2560px) {
+  #coupon {
+    left: 25%;
+    top: -90%;
+  }
+}
+@media screen and (max-width: 1497px) {
+  #coupon {
+    left: 25%;
+    top: -90%;
+  }
+}

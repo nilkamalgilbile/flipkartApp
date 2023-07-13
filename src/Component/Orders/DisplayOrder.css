@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: black;
+  --gray-color: gray;
+  --brand-color: #172337;
+}
+
+.dark-theme {
+  --primary-color: black;
+  --secondary-color: #ffffff;
+  --gray-color: #cccccc;
+  --brand-color: #cccccc;
+}
+
+tbody td {
+  color: var(--secondary-color);
+}

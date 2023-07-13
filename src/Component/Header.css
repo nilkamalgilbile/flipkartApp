@@ -37,12 +37,22 @@ header {
   background-color: #2874f0;
   height: 50px;
 }
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  align-items: center;
+}
+
+.navToggle {
+  color: yellow !important;
+}
 
 .webname {
   font-size: 27px;
   color: var(--primary-color);
   font-style: italic;
   align-self: center;
+  margin-right: 4%;
 }
 #searchBox {
   width: 400px;
@@ -51,15 +61,8 @@ header {
   border: none;
   font-size: 16px;
 }
-#searchBtn {
-  background-color: var(--primary-color);
-  color: #2874f0;
-  text-align: center;
-  font-size: 16px;
-  align-self: center;
-  margin-left: -6.7%;
-}
-#loginButton {
+
+#homeButton {
   font-size: 16px;
   background-color: var(--primary-color);
   color: #2874f0;
@@ -68,12 +71,7 @@ header {
   text-align: center;
   width: 110px;
   font-weight: bold;
-}
-
-#cartIcon {
-  font-size: 16;
-  font-weight: bold;
-  color: var(--primary-color);
+  margin-right: 2%;
 }
 
 #modeIcon {
@@ -83,23 +81,20 @@ header {
 
 .location {
   font-size: 16px;
-  color: var(--primary-color);
+  color: white;
   font-weight: bold;
 }
 
 /* media query */
 
-@media screen and (max-width: 1024px) {
-  #searchBox {
-    width: 35%;
+@media screen and (max-width: 1430px) {
+  .brand {
+    display: none;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #searchBox {
-    display: none;
-  }
-  #searchBtn {
+  .brand {
     display: none;
   }
 }

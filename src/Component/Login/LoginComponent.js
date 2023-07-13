@@ -22,7 +22,6 @@ const LoginComponent = () => {
   };
 
   const checkout = () => {
-    console.log(values);
     fetch(url, {
       method: "POST",
       headers: {
@@ -53,7 +52,7 @@ const LoginComponent = () => {
             <div className="row">
               <h2 style={{ color: "red" }}>{message}</h2>
               <div className="col-md-6 form-group">
-                <label for="email" className="form-label mt-2">
+                <label htmlFor="email" className="form-label mt-2">
                   Email
                 </label>
                 <input
@@ -65,7 +64,7 @@ const LoginComponent = () => {
                 />
               </div>
               <div className="col-md-6 form-group">
-                <label for="email" className="form-label mt-2">
+                <label htmlFor="email" className="form-label mt-2">
                   Password
                 </label>
                 <input

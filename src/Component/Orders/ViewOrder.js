@@ -8,10 +8,10 @@ const ViewOrder = () => {
   const [orders, setOrder] = useState();
   let sessionData = sessionStorage.getItem("userInfo");
   let data = JSON.parse(sessionData);
-  const email = "shreya@gmail.com";
+  // const email = "shreya@gmail.com";
 
   useEffect(() => {
-    axios.get(`${url}?email=${email}`).then((res) => {
+    axios.get(`${url}?email=${data.email}`).then((res) => {
       setOrder(res.data);
     });
   });

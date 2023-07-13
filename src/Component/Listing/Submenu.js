@@ -8,11 +8,7 @@ const Submenu = () => {
   const [fashion, setFashion] = useState("");
   const [electro, setElectro] = useState("");
   const [home, setHome] = useState("");
-
-  const [appliances, setAppliances] = useState("");
-
   const [beauty, setBeauty] = useState("");
-
   const [subType, setSubType] = useState("");
 
   useEffect(() => {
@@ -200,19 +196,19 @@ const Submenu = () => {
             <i className="fa-solid fa-bars toggleIcon"></i>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
               <li className="nav-item">
-                <Link to="/listing/1" className="nav-link">
+                <Link to="/listing/1" className="nav-link me-2">
                   Grocery
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/listing/2" className="nav-link">
+                <Link to="/listing/2" className="nav-link me-2">
                   Mobiles
                 </Link>
               </li>
 
-              <li className="nav-item dropdown">
+              <li className="nav-item dropdown me-2">
                 <span
                   className="nav-link dropdown-toggle"
                   href="#"
@@ -229,7 +225,7 @@ const Submenu = () => {
                 <ul className="dropdown-menu">{renderFashion(fashion)}</ul>
               </li>
 
-              <li className="nav-item dropdown">
+              <li className="nav-item dropdown me-2">
                 <span
                   className="nav-link dropdown-toggle"
                   href="#"
@@ -245,7 +241,7 @@ const Submenu = () => {
                 </span>
                 <ul className="dropdown-menu">{renderElectronics(electro)}</ul>
               </li>
-              <li className="nav-item dropdown">
+              <li className="nav-item dropdown me-2">
                 <span
                   className="nav-link dropdown-toggle"
                   href="#"
@@ -261,7 +257,7 @@ const Submenu = () => {
                 </span>
                 <ul className="dropdown-menu">{renderHome(home)}</ul>
               </li>
-              <li className="nav-item dropdown">
+              <li className="nav-item dropdown me-2">
                 <span
                   className="nav-link dropdown-toggle"
                   href="#"
@@ -277,7 +273,7 @@ const Submenu = () => {
                 </span>
                 <ul className="dropdown-menu">{renderBeauty(beauty)}</ul>
               </li>
-              <li className="nav-item dropdown">
+              <li className="nav-item dropdown me-2">
                 <Link to="/listing/7" className="nav-link">
                   Two Wheelers
                 </Link>

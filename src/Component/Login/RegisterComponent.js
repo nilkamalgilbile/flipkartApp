@@ -23,7 +23,7 @@ const RegisterComponent = () => {
   };
 
   const checkout = () => {
-    console.log(values);
+    // console.log(values);
     fetch(url, {
       method: "POST",
       headers: {

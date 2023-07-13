@@ -52,7 +52,10 @@ const Carousel = () => {
               />
             </div>
             <div className="carousel-item">
-              <img src="https://i.ibb.co/DkFXQ7j/slide-img4.png" />
+              <img
+                src="https://i.ibb.co/DkFXQ7j/slide-img4.png"
+                alt="Sliding Image"
+              />
             </div>
           </div>
 

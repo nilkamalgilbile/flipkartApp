@@ -87,7 +87,9 @@ const DetailsLogic = () => {
   };
 
   const proceed = () => {
-    navigate(`/placeOrder/${prodDetails.item_id}`);
+    navigate(
+      `/placeOrder/${prodDetails.item_id}?prodName=${prodDetails.product_name}&prodCost=${prodDetails.cost}`
+    );
   };
 
   const renderDetails = () => {
